@@ -33,8 +33,7 @@ function Home() {
     if (isLoading) return <SkeletonHome />;
     if (isError) return <Error />;
     return (
-        <div className="flex flex-col py-5 items-center justify-center min-h-screen bg-white text-gray-800">
-            <h1 className="text-2xl font-bold mb-6">Product Catalog</h1>
+        <div className="flex flex-col pt-[70px] py-5 items-center justify-center min-h-screen bg-white text-gray-800">
             <div className="px-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-6">
                 {data?.products.map(product => (
                     <Card key={product.id} product={product} />

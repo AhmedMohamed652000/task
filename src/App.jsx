@@ -3,16 +3,18 @@ import './App.css';
 import { BrowserRouter, useLocation } from 'react-router-dom';
 import Routers from './Routers/Routers';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import Navbar from './components/Shared/navbar';
 
 function App() {
   const queryClient = new QueryClient();
 
   return (
-    <BrowserRouter>
-      <QueryClientProvider client={queryClient}>
+    <QueryClientProvider client={queryClient}>
+      <BrowserRouter>
+        <Navbar />
         <Routers />
-      </QueryClientProvider>
-    </BrowserRouter>
+      </BrowserRouter>
+    </QueryClientProvider>
   );
 }
 

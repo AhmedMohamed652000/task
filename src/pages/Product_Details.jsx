@@ -22,7 +22,7 @@ function Product_Details() {
     if (isError) return <Error />;
 
     return (
-        <div className="bg-gray-50 min-h-screen flex flex-col lg:flex-row items-start lg:items-center justify-center p-4">
+        <div className="bg-gray-50 pt-[70px] min-h-screen flex flex-col lg:flex-row items-start lg:items-center justify-center p-4">
             <Carousel images={data.images} className="w-full lg:w-1/2 lg:max-w-lg shadow-lg mx-6" />
             <div className="bg-white p-6 rounded-lg shadow-lg max-w-md lg:max-w-lg mx-6 my-4">
                 <h1 className="text-3xl font-bold text-gray-900 mb-2">{data.title}</h1>
